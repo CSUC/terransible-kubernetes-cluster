@@ -60,7 +60,7 @@
 - name: Install packages
   yum: name={{ item }} state=present
   with_items:
-  - docker
+  - docker-engine
   - kubeadm
 
 - name: Enable and start docker
